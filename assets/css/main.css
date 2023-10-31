@@ -1,3 +1,320 @@
 /****************************************************/
-/* Heder Navbar */
+/* Heder Navbar Header */
 /****************************************************/
+
+.header__fixed {
+    background-color: #e6f0ff;
+    position: relative;
+}
+.header__navbar {
+    display: flex;
+}
+
+.navbar__action {
+    margin-left: auto;
+}
+
+.header__navbar-list {
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    margin-left: 10px;
+}
+
+.header__navbar-list li a {
+    font-size: 1.4rem;
+    padding: 14px;
+    font-weight: 600;
+}
+
+.navbar__signin {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0 18px;
+}
+
+.navbar__signup-btn {
+    height: 40px;
+}
+
+.header_hero {
+    /* display: flex; */
+    /* height: 100%; */
+}
+.intro__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 138px;
+    margin-bottom: 8px;
+    color: #687690;
+}
+
+.intro__title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 76px;
+    height: 152px;
+    width: 559px;
+    color: 000336;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.intro__description {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    width: 550px;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    color: #5a6473;
+}
+
+.intro__cta-btn {
+    min-width: 170px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.header_hero__illustration {
+    /* bottom: 0; */
+}
+
+.header_hero__illustration-img {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: calc((100% - 1110px) / 2 - 100px);
+    bottom: 0;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+/* client-block */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.client-block {
+    margin-top: 79px;
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 81px;
+}
+
+.client-block__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-block__info {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #7d8589;
+}
+
+.rating-text {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.client-rate {
+    text-align: right;
+}
+
+.client-logo {
+    margin-top: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-logo-link-amazon {
+    padding: 26px 40px;
+    box-shadow: 1px 1px 10px #c4c4c4;
+    border-radius: 4px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+/* How it work */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.how-it-work {
+    margin-top: 79px;
+    width: 685px;
+    height: 427px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.how-it-work__header-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    /* using right: 50%, you are telling the browser: "Place the right edge of this element at a distance equal to 50% of the parent element's width from the right edge of the parent element" */
+    right: 50%;
+    /* transform: translateX(-50%) means "shift this element to the left by 50% of its own width". it mean 50% of width: 41px; */
+    transform: translateX(50%);
+    border: 1px solid black;
+    width: 41px;
+    height: 2px;
+    background-color: #000339;
+}
+
+.how-it-work__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-it-work__header-title {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.how-it-work__header-block {
+    text-align: center;
+}
+
+.how-it-work__header-description {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 459px;
+    text-align: center;
+}
+
+.how-it-work__guid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.sell-full-guid {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.buyer-guild,
+.renter-guid,
+.seller-guild {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 22px;
+    color: #3b3c45;
+}
+
+.buy-link,
+.rent-link,
+.guid-link {
+    font-size: 1.4rem;
+    color: #0689ff;
+    font-weight: 600;
+}
+
+.how-to-buy,
+.how-to-rent,
+.how-to-sell {
+    text-align: center;
+}
+
+.sell-full-guid-btn {
+    width: 180px;
+    padding: 15px 24px;
+    font-size: 1.3rem;
+    margin-bottom: 79px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+/* Responsive */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+@media only screen and (max-width: 768px) {
+    .header__navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__navbar-list {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .header__navbar-list li {
+        margin-bottom: 10px;
+    }
+
+    .navbar__action {
+        margin-left: 0;
+    }
+
+    .header_hero__illustration-img {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .intro__title,
+    .intro__description {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* how it work */
+
+@media only screen and (max-width: 768px) {
+    .client-block,
+    .how-it-work {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .client-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-logo-link {
+        margin-bottom: 20px;
+    }
+
+    .how-it-work__guid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-to-buy,
+    .how-to-rent,
+    .how-to-sell {
+        margin-bottom: 20px;
+    }
+}
+
+/* Font Sizes and Button Sizes: */
+@media only screen and (max-width: 768px) {
+    .header__navbar-list li a,
+    .navbar__signin,
+    .navbar__signup-btn,
+    .intro__cta-btn,
+    .sell-full-guid-btn {
+        font-size: 1.2rem;
+    }
+
+    .intro__subtitle,
+    .intro__title,
+    .intro__description,
+    .client-block__info,
+    .rating-text,
+    .buyer-guild,
+    .renter-guid,
+    .seller-guild,
+    .buy-link,
+    .rent-link,
+    .guid-link {
+        font-size: 1.6rem;
+    }
+}
