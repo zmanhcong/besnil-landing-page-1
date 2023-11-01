@@ -228,93 +228,295 @@
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-/* Responsive */
+/* Properties */
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
-@media only screen and (max-width: 768px) {
-    .header__navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__navbar-list {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .header__navbar-list li {
-        margin-bottom: 10px;
-    }
-
-    .navbar__action {
-        margin-left: 0;
-    }
-
-    .header_hero__illustration-img {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .intro__title,
-    .intro__description {
-        width: 100%;
-        text-align: center;
-    }
+.featured_properties {
+    background-color: #d3e1eb;
+    /* width: 100%; */
+    height: 727px;
+    margin-top: 120px;
 }
 
-/* how it work */
-
-@media only screen and (max-width: 768px) {
-    .client-block,
-    .how-it-work {
-        width: 100%;
-        padding: 40px;
-    }
-
-    .client-logo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .client-logo-link {
-        margin-bottom: 20px;
-    }
-
-    .how-it-work__guid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .how-to-buy,
-    .how-to-rent,
-    .how-to-sell {
-        margin-bottom: 20px;
-    }
+.properties-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-/* Font Sizes and Button Sizes: */
-@media only screen and (max-width: 768px) {
-    .header__navbar-list li a,
-    .navbar__signin,
-    .navbar__signup-btn,
-    .intro__cta-btn,
-    .sell-full-guid-btn {
-        font-size: 1.2rem;
-    }
+.properties-title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
 
-    .intro__subtitle,
-    .intro__title,
-    .intro__description,
-    .client-block__info,
-    .rating-text,
-    .buyer-guild,
-    .renter-guid,
-    .seller-guild,
-    .buy-link,
-    .rent-link,
-    .guid-link {
-        font-size: 1.6rem;
-    }
+.properties-description {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.view-all-link {
+    color: #0689ff;
+    text-align: right;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.properties-header__link {
+    padding: 16px 0;
+}
+.property-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.property-item + .property-item {
+    margin-left: 15px;
+}
+
+.property-image {
+    width: 350px;
+    height: 227px;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-bottom: -4px;
+}
+
+.property-name {
+    margin-top: 0;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000339;
+}
+.content-block {
+    background-color: var(--white-color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.property-address {
+    color: #a3a6ab;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.property-details {
+    list-style-type: none;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.property-details-item {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.property-details-item + .property-details-item {
+    margin-left: 22px;
+}
+.property-details-item-img {
+    margin-right: 8px;
+    height: 100%;
+}
+
+.property-text {
+    color: #4d4d52;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+/* realestate info */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.realestate-info {
+    position: relative;
+    height: 684px;
+    width: 100%;
+}
+
+.realestate-info__rental {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 239px;
+    height: 252px;
+    background-color: var(--white-color);
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 10px 10px 10px var(--text-color);
+}
+
+.realestate-info__count {
+    color: #000339;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.26px;
+    width: 159px;
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 40px;
+}
+
+.realestate-info__description {
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 25px;
+    padding: 0px 20px;
+}
+
+.realestate-info__user-icons {
+    padding: 0px 10px;
+    position: relative;
+}
+
+.realestate-info__user-icons::before {
+    position: absolute;
+    content: "";
+    border: 1.2px solid #e9e9e9;
+    width: 193px;
+}
+
+.user-avartar {
+    padding-top: 25px;
+}
+
+.realestate-info__house {
+    width: 400px;
+    height: 460px;
+    margin-top: 125px;
+    margin-left: 120px;
+}
+
+.realestate-info__house-image {
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    display: block;
+}
+
+.user-avartar {
+    position: relative;
+    margin-top: 20px;
+}
+
+.user-avartar + .user-avartar {
+    margin-top: 6px;
+}
+
+.user-avartar-img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.user-avartar-img:nth-child(2) {
+    left: 12px;
+    z-index: 2;
+}
+
+.user-avartar-img:nth-child(3) {
+    left: 30px;
+    z-index: 3;
+}
+
+.user-avartar-img:nth-child(4) {
+    left: 90px;
+    z-index: 4;
+}
+
+.user-avartar-img:nth-child(5) {
+    left: 110px;
+    z-index: 5;
+}
+
+.user-avartar-img:nth-child(6) {
+    left: 140px;
+    z-index: 6;
+}
+
+.user-avartar-img:nth-child(7) {
+    left: 155px;
+    z-index: 7;
+}
+
+.user-avartar-img:nth-child(8) {
+    left: 170px;
+    z-index: 8;
+}
+
+.realstate-header {
+    display: flex;
+}
+
+.realestate-info__love-message {
+    margin-top: 200px;
+    padding-left: 164px;
+}
+
+.realestate-info__title {
+    width: 269px;
+    height: 142px;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 45px;
+    position: relative;
+}
+
+.realestate-info__title::before {
+    content: "";
+    position: absolute;
+    border: 3px solid black;
+    width: 41px;
+    top: -10px;
+    left: 0;
+}
+.realestate-info__text {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    width: 309px;
+}
+
+.realestate-info__property-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.realestate-info__number {
+    color: #000;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    padding-left: 10px;
+}
+
+.realestate-info__stat-description {
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 10px;
+    line-height: normal;
 }
