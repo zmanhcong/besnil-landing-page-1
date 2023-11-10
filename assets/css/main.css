@@ -150,7 +150,6 @@
     content: "";
     position: absolute;
     top: 0;
-    /* using right: 50%, you are telling the browser: "Place the right edge of this element at a distance equal to 50% of the parent element's width from the right edge of the parent element" */
     right: 50%;
     /* transform: translateX(-50%) means "shift this element to the left by 50% of its own width". it mean 50% of width: 41px; */
     transform: translateX(50%);
@@ -363,16 +362,24 @@
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 /* realestate info */
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.realestate-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1017px;
+    height: 685px;
+    max-width: calc(100% - 24px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .realestate-info {
     position: relative;
-    height: 684px;
     width: 100%;
 }
 
 .realestate-info__rental {
     position: absolute;
-    top: 0px;
+    top: 50px;
     left: 0;
     width: 239px;
     height: 252px;
@@ -423,7 +430,7 @@
 .realestate-info__house {
     width: 400px;
     height: 460px;
-    margin-top: 125px;
+    margin-top: 50px;
     margin-left: 120px;
 }
 
@@ -492,7 +499,7 @@
 }
 
 .realestate-info__love-message {
-    margin-top: 200px;
+    margin-top: 65px;
     padding-left: 164px;
 }
 
@@ -526,7 +533,7 @@
 .realestate-info__property-stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 110px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -545,5 +552,160 @@
     font-style: normal;
     font-weight: 500;
     padding-left: 10px;
+    line-height: normal;
+}
+
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+/* subscribe */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.subscribe-content{
+    width: 1110px;
+    height: 377px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 51px;
+    margin-bottom: 55px;
+    border-radius: 20px;
+    background-color: #063183;
+    position: relative;
+}
+
+.subscribe_img{
+    position: absolute;
+    top: -30px;
+    right: 221px;
+}
+
+.subscribe_text-title{
+    color: #FFF;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 35px;
+    padding-top: 140px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.subscribe_text-description{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 80px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.subscribe_button button{
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 151px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius:12px;
+    background: #FFF;
+
+    color: #002366;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+/* footer */
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.footer{
+    width: 1110px;
+    height: 321px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 58px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_product-title,
+.footer_resources-title,
+.footer_company-title,
+.footer_social-title{
+    color: #1C1C1D;
+    font-family: Lato;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.footer_product ul,
+.footer_resources ul,
+.footer_company ul,
+.footer_social ul{
+    color: #7A7A7E;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 19px;
+    margin: 0;
+}
+
+.footer_product ul li,
+.footer_resources ul li,
+.footer_company ul li,
+.footer_social ul li{
+    padding-top: 21px;
+}
+
+.social-desc{
+    color: #7A7A7E;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 257px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.footer-social-desc{
+    margin-top: 40px;
+}
+
+
+.footer-brand-icon{
+    width: 107px;
+    height: 24px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-copyright{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    color: #C2C2C2;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
 }
