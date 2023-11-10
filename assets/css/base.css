@@ -23,7 +23,7 @@ html {
 
 .content {
     width: 1110px;
-    /* height: 736px; */
+    height: 736px;
     max-width: calc(100% - 24px);
     margin-left: auto;
     margin-right: auto;
