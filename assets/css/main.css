@@ -21,6 +21,14 @@
     margin-left: 10px;
 }
 
+.header__navbar-list li a{
+    color: #4F5361;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .header__navbar-list li a {
     font-size: 1.4rem;
     padding: 14px;
