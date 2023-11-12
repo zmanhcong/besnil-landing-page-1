@@ -30,12 +30,34 @@ html {
     padding-top: 38px;
 }
 
+/* Remove default */
+a,
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
 a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
+    padding: 0;
+}
+
+li {
     padding: 0;
 }
 
@@ -47,6 +69,7 @@ ul{
     color: var(--white-color);
     font-size: 1.4rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover {
