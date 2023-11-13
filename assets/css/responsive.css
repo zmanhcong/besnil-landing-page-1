@@ -1,0 +1,103 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile_header {
+        display: none;
+    }
+}
+
+/* Tablet and Mobile */
+@media screen and (max-width: 991.98px) {
+    .header__navbar-list {
+        display: none;
+    }
+
+    .mobile_header {
+        display: block;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .header__navbar {
+        position: relative;
+    }
+
+    .tablet_navbar_logo {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+        transform: translateY(30%);
+        text-align: center;
+        line-height: 20px;
+    }
+
+    /* bars icon */
+    .toggle_menu {
+        font-size: 36px;
+        color: #666;
+    }
+
+    .menu_overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu_drawer {
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        background-color: var(--white-color);
+        z-index: 30;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu_drawer a img {
+        padding: 20px;
+    }
+
+    .menu_drawer ul {
+        padding: 20px;
+        display: block;
+    }
+
+    .menu_drawer ul li {
+        color: #4f5361;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .menu_drawer ul li + li {
+        margin-top: 12px;
+    }
+
+    .menu_checkbox:checked ~ .menu_overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu_checkbox:checked ~ .menu_drawer {
+        transform: translateX(0);
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .mobile {
+        display: block;
+    }
+}
