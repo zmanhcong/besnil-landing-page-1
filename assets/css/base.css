@@ -6,9 +6,10 @@
     --border-color: #dbdbdb;
 }
 
-* {
-    /* inheri box-sizing in below html; */
-    box-sizing: inherit;
+*,
+::before,
+::after {
+    box-sizing: border-box;
 }
 
 html {
