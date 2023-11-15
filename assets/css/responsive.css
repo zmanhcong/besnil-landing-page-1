@@ -89,15 +89,90 @@
     .menu_checkbox:checked ~ .menu_drawer {
         transform: translateX(0);
     }
+
+    .header_hero__intro {
+        text-align: center;
+    }
+    .intro__description {
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+    }
+    .intro__title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .client-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .client-logo-link + .client-logo-link {
+        margin: 20px 60px;
+    }
+    .featured_properties {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .property-body {
+        grid-template-columns: 1fr 1fr;
+    }
+    .realstate-header {
+        flex-direction: column;
+    }
+
+    .realestate-info__love-message {
+        order: 1;
+    }
+
+    .realestate-info__house {
+        order: 2;
+    }
+
+    .realestate-info__love-message {
+        padding: 0;
+    }
+    .realestate-info__title {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .realestate-info__text {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .header_hero__illustration-img {
+        display: none;
+    }
+
+    .cards {
+        --columns: 2;
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
     .mobile {
         display: block;
+    }
+    .navbar__action {
+        display: none;
+    }
+    .menu_drawer {
+        inset: 0 25% 0 0;
+    }
+    .separate {
+        border-top: 1.5px solid #bebebe;
+    }
+    .header_hero__illustration-img {
+        display: none;
+    }
+    .cards {
+        --columns: 1;
     }
 }
