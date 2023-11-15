@@ -3,6 +3,9 @@
     .mobile_header {
         display: none;
     }
+    .toggle_menu {
+        display: none;
+    }
 }
 
 /* Tablet and Mobile */
@@ -119,7 +122,10 @@
         grid-template-columns: 1fr 1fr;
     }
     .realstate-header {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .realestate-info__love-message {
@@ -157,8 +163,8 @@
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
-    .mobile {
-        display: block;
+    .hidden_on_mobile {
+        display: none;
     }
     .navbar__action {
         display: none;
@@ -172,7 +178,171 @@
     .header_hero__illustration-img {
         display: none;
     }
+    .header_hero {
+        display: flex;
+        justify-content: start;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .header_hero_flex {
+        /* padding-top: 0; */
+    }
+    .intro__subtitle {
+        font-weight: 600;
+    }
     .cards {
         --columns: 1;
+    }
+
+    .client-block {
+        padding: 0;
+    }
+    .client-block__rating {
+        height: 20px;
+    }
+    .client-block__info {
+        width: 100%;
+    }
+    .client-block__info {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .client-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .client-logo-link {
+        padding: 20px 44px;
+    }
+    .client-logo-link + .client-logo-link {
+        margin: 0;
+    }
+    .how-it-work__header-description {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .how-it-work__guid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .how-to-buy,
+    .how-to-rent,
+    .how-to-sell {
+        padding: 0 100px;
+    }
+    .realestate-info__house-image {
+        width: 500px;
+        max-width: 80%;
+        border-radius: 20px;
+    }
+    .properties-header {
+        display: block;
+    }
+    .realestate-info__house {
+        margin: 0;
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .realestate-info__rental {
+        display: none;
+        right: 25%;
+        top: 0;
+        position: absolute;
+        transform: translate(0, 0);
+        border-top-right-radius: 10px;
+    }
+    .realestate-info__property-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .realestate-info__stat {
+        margin-top: 30px;
+    }
+    .subscribe-content {
+        margin: 0 30px;
+    }
+    .subscribe_text {
+        padding: 20px 40px;
+    }
+    .subscribe_text-title {
+        padding: 0;
+    }
+    .subscribe_text-description {
+        padding: 0;
+        margin-top: 20px;
+        font-size: 1.9rem;
+    }
+    .subscribe_button button {
+        margin-left: 30px;
+    }
+    .subscribe_img {
+        display: none;
+    }
+    .footer {
+        height: 100%;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_product,
+    .footer_resources,
+    .footer_company,
+    .footer_social {
+        padding: 0 30px;
+    }
+    .footer_resources,
+    .footer_company,
+    .footer_social {
+        margin-top: 35px;
+    }
+    .footer_product-title,
+    .footer_resources-title,
+    .footer_company-title,
+    .footer_social-title {
+        font-size: 2.5rem;
+    }
+    .footer_product ul,
+    .footer_resources ul,
+    .footer_company ul,
+    .footer_social ul {
+        padding-top: 0;
+        font-size: 2rem;
+    }
+    .footer_social {
+        margin-bottom: 60px;
+    }
+    .social-desc {
+        padding-top: 6px;
+    }
+    .footer-social-desc {
+        margin: 5px;
+    }
+
+    .footer-brand-icon {
+        margin-left: 30px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .footer-copyright {
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        margin: 0;
+        color: #c2c2c2;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .footer-social-desc {
+        padding-bottom: 30px;
+        padding-top: 20px;
     }
 }

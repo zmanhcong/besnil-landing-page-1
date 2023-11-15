@@ -3,7 +3,6 @@
 /****************************************************/
 
 .header__fixed {
-    /* position: fixed; */
     position: sticky;
     background: #e6f0ff;
     padding-top: 10px;
@@ -76,7 +75,6 @@
     font-size: 54px;
     font-weight: 700;
     line-height: 76px;
-    height: 152px;
     max-width: 559px;
     color: 000336;
     margin-top: 0px;
@@ -95,7 +93,7 @@
 .intro__cta-btn {
     min-width: 170px;
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header_hero__illustration {
@@ -124,6 +122,11 @@
 .client-block__header {
     display: flex;
     justify-content: space-between;
+}
+.client-block__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .client-block__info {
@@ -161,7 +164,6 @@
 .how-it-work {
     margin-top: 79px;
     max-width: 685px;
-    height: 427px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -348,8 +350,9 @@
     align-items: center;
 }
 .card-check-icon {
-    color: blue;
     font-size: 1.6rem;
+    font-size: 2rem;
+    color: rgb(79, 206, 120);
 }
 
 .card-user-game {
@@ -487,15 +490,18 @@
 }
 
 .realestate-info__house {
-    max-width: 400px;
     height: 460px;
     margin-top: 50px;
     margin-left: 120px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .realestate-info__house-image {
-    max-width: 400px;
+    width: 600px;
+    max-width: 90%;
     height: 460px;
     object-fit: cover;
     display: block;
@@ -571,6 +577,8 @@
 
 .realstate-header {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .realestate-info__love-message {
@@ -636,7 +644,6 @@
 
 .subscribe-content {
     max-width: 1110px;
-    height: 377px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -681,7 +688,7 @@
     flex-shrink: 0;
     border-radius: 12px;
     background: #fff;
-
+    margin-bottom: 30px;
     color: #002366;
     text-align: center;
     font-size: 13px;
